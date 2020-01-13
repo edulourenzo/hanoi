@@ -19,13 +19,13 @@
 
 ---
 
-## CheckList
+## Task List
 
-[] Transformar árvore binária perfeita em um vetor
-[] Criar função matemática com as notações dos nós \(pai, filho esquerdo, filho direito\)
-[] alternar os níveis da árvore em horário e anti-horário
-[] Preencher os níveis da árvore numa rotação determinda
-[] Criar função iterativa (pilha [stack]) para percorrer a árvore EM ORDEM (inorder \[Left, Root, Right\])
+- [ ]  Transformar árvore binária perfeita em um vetor
+- [ ]  Criar função matemática com as notações dos nós \(pai, filho esquerdo, filho direito\)
+- [ ]  alternar os níveis da árvore em horário e anti-horário
+- [ ]  Preencher os níveis da árvore numa rotação determinda
+- [ ]  Criar função iterativa \(pilha \[stack\]\) para percorrer a árvore EM ORDEM (inorder \[Left, Root, Right\])
 
-[] Criar modo gráfico em formato de texto \(terminal\)
-[] Criar modo gráfico em formato OpenGL
+- [ ]  Criar modo gráfico em formato de texto \(terminal\)
+- [ ]  Criar modo gráfico em formato OpenGL

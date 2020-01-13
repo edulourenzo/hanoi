@@ -1,6 +1,6 @@
 # Torre de Hanói (Tower of Hanoi)
 
-1. [Introução](#1-introdu%C3%A7%C3%A2o)
+1. [Introução](#1-introduÇÃo)
 2. [Abordagem](#2-abordagem)
 3. Estrutura de dados
 4. Cáculos

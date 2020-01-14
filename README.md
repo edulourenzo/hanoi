@@ -16,9 +16,10 @@
 ![GIF](https://media.giphy.com/media/rutTKcoKSCSYM/giphy.gif)
 
 ---
+
 ## 2. ABORDAGEM
 
-Usar as hastes da torre como uma [pillha](#3-4-stack), e uma [árvore binária perfeita](#3-1-perfectbinarybree) implementada como um [vetor](#3-2-array) para armazenar as movimentações dos discos, onde cada nó da árvore é um [par ordenado](#3-3-pair) \(a, b\), tal que \"a\" é o índice da haste de origem e \"b\" o índece da haste de destino. Sendo cada nível da árvore representando um disco\(Separado por cores na figura abaixo\).
+Usar as hastes da torre como uma [pillha](#34-stack), e uma [árvore binária perfeita](#31-perfectbinarybree) implementada como um [vetor](#32-array) para armazenar as movimentações dos discos, onde cada nó da árvore é um [par ordenado](#33-pair) \(a, b\), tal que \"a\" é o índice da haste de origem e \"b\" o índece da haste de destino. Sendo cada nível da árvore representando um disco\(Separado por cores na figura abaixo\).
 
 ---
 
@@ -59,16 +60,12 @@ A ordem na qual os elementos saem de uma pilha dá origem ao seu nome alternativ
 - [x] Cria vetor de pilhas representando as hastes
 - [x] Transformar árvore binária perfeita em um vetor
 - [ ] Criar funções para nós da árvore
-- [x] Filho direito
-- [x] Filho esquerdo
+- [ ] Filho direito
+- [ ] Filho esquerdo
 - [ ] Pai
-
-
 - [ ] Criar fun;ão anternante para horário e 
 zanti-horário.
 - [ ] Preencher por níveis a árvore usando a função alternante
 - [ ]  Criar função iterativa EM Ordem para percorrer a árvore
-
-
 - [ ]  Criar modo gráfico em formato de texto \(terminal\)
 - [ ]  Criar modo gráfico em formato OpenGL

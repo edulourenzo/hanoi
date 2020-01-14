@@ -2,7 +2,7 @@
 
 1. [Introução](#1-introduÇÃo)
 2. [Abordagem](#2-abordagem)
-3. [Tipos Abstratos de Dados ](#3-tipos-abstratos-de-dadis-tad)
+3. [Tipos Abstratos de Dados](#3-tipos-abstratos-de-dadis-tad)
 4. Cáculos
 5. etc
 
@@ -21,7 +21,7 @@ Usar as hastes da torre como uma [pillha](#3-4-stack), e uma [árvore binária p
 
 ---
 
-## 3. Tipos Abstratos de Dadis TAD
+## 3. Tipos Abstratos de Dados TAD
 
 ![Scheme](https://github.com/edulourenzo/hanoi/blob/master/Perfect%20Binary%20Tree%20(Array%20implementation).jpg)
 
@@ -41,7 +41,8 @@ Usar as hastes da torre como uma [pillha](#3-4-stack), e uma [árvore binária p
 ### 3.3 Pair
 
 Uma tupla de dois elementos inteiros formando um par ordenad \(a, b\).
-[Wikipédia](https://en.wikipedia.org/wiki/Ordered_pair)
+
+[Wikipédia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Binary_tree_in_array.svg/450px-Binary_tree_in_array.svg.png)
 
 ### 3.4 Stack
     

@@ -36,7 +36,7 @@ Usar as hastes da torre como uma [pillha](#3-4-stack), e uma [árvore binária p
         
 *"As árvores binárias também podem ser armazenadas em ordem de largura como uma estrutura de dados implícita em matrizes e, se a árvore for uma árvore binária completa, esse método não desperdiçará espaço. Nesse arranjo compacto, se um nó tem um índice i, seus filhos são encontrados nos índices 2i + 1 \(para o filho esquerdo\) e 2i + 2 \(para o direito\), enquanto seu pai \(se houver\) é encontrado no índice \(i-1\)/2 \(assumindo que a raiz tenha o índice zero\).[Wikipédia](https://en.wikipedia.org/wiki/Binary_tree#Arrays)"*
 
-![Array](https://en.wikipedia.org/wiki/Binary_tree#/media/File:Binary_tree_in_array.svg)
+![Array](https://github.com/edulourenzo/hanoi/blob/master/450px-Binary_tree_in_array.svg.png)
 
 ### 3.3 Pair
 
@@ -60,12 +60,16 @@ A ordem na qual os elementos saem de uma pilha dá origem ao seu nome alternativ
 - [x] Cria vetor de pilhas representando as hastes
 - [x] Transformar árvore binária perfeita em um vetor
 - [ ] Criar funções para nós da árvore
-        - [x] Filho direito
-        - [x] Filho esquerdo
-        - [ ] Pai
-- [ ] Criar fun;ão anternante para horário e anti-horário.
+- [x] Filho direito
+- [x] Filho esquerdo
+- [ ] Pai
+
+
+- [ ] Criar fun;ão anternante para horário e 
+zanti-horário.
 - [ ] Preencher por níveis a árvore usando a função alternante
 - [ ]  Criar função iterativa EM Ordem para percorrer a árvore
+
 
 - [ ]  Criar modo gráfico em formato de texto \(terminal\)
 - [ ]  Criar modo gráfico em formato OpenGL

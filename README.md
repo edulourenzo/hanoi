@@ -19,7 +19,7 @@
 
 ## 2. ABORDAGEM
 
-Usar as hastes da torre como uma [pillha](#34-stack), e uma [árvore binária perfeita](#31-perfectbinarybree) implementada como um [vetor](#32-array) para armazenar as movimentações dos discos, onde cada nó da árvore é um [par ordenado](#33-pair) \(a, b\), tal que \"a\" é o índice da haste de origem e \"b\" o índece da haste de destino. Sendo cada nível da árvore representando um disco\(Separado por cores na figura abaixo\).
+Usar as hastes da torre como uma [pillha](#34-stack), e uma [árvore binária perfeita](#31-perfect-binary-tree) implementada como um [vetor](#32-array) para armazenar as movimentações dos discos, onde cada nó da árvore é um [par ordenado](#33-pair) \(a, b\), tal que \"a\" é o índice da haste de origem e \"b\" o índece da haste de destino. Sendo cada nível da árvore representando um disco\(Separado por cores na figura abaixo\).
 
 ---
 

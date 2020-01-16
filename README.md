@@ -59,10 +59,11 @@ A ordem na qual os elementos saem de uma pilha dá origem ao seu nome alternativ
 
 - [x] Cria vetor de pilhas representando as hastes
 - [x] Transformar árvore binária perfeita em um vetor
-- [ ] Criar funções para nós da árvore
-- [ ] Filho direito
-- [ ] Filho esquerdo
-- [ ] Pai
+- [x] Criar funções para nós da árvore
+- [x] - Pai
+- [x] - Filho esquerdo
+- [x] - Filho direito
+- [ ] Criar função para preencher a árvore
 - [ ] Criar fun;ão anternante para horário e 
 zanti-horário.
 - [ ] Preencher por níveis a árvore usando a função alternante

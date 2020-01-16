@@ -63,6 +63,7 @@ A ordem na qual os elementos saem de uma pilha dá origem ao seu nome alternativ
 - [x] - Pai
 - [x] - Filho esquerdo
 - [x] - Filho direito
+- [x] - Criar função de aritmética modular
 - [ ] Criar função para preencher a árvore
 - [ ] Criar fun;ão anternante para horário e 
 zanti-horário.

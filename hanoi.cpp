@@ -5,29 +5,29 @@
 
 using namespace std;
 
-typedef unsigned int uint;
-typedef uint rod_origin;
-typedef uint rod_destiny;
+typedef unsigned int    uint;
+typedef uint            rod_origin;
+typedef uint            rod_destiny;
 typedef pair<rod_origin, rod_destiny> Node;
-typedef vector<Node> Tree;
+typedef vector<Node>    Tree;
 
-int father  (Tree, uint);
-int left    (Tree, uint);
-int right   (Tree, uint);
+int     mod         (int, int);
+int     father      (Tree, uint);
+int     left        (Tree, uint);
+int     right       (Tree, uint);
+void    init_tree   (Tree);
 
 int main()
 {
     vector< stack<char> > rod(NUM_RODS, stack<char>());
     Tree tree(pow(2, NUM_DISKS) - 1);
 
-    for(uint i = 0; i < tree.size(); i++)
-    {
-        cout << "Pai de " << i << ": " << father(tree, i) << endl;
-        cout << "Dir de " << i << ": " << right(tree, i) << endl;
-        cout << "Esq de " << i << ": " << left(tree, i) << endl;
-        cout << endl;
-    }
+    //init_tree(tree);
   
+    for(int i = -7; i <= 7; i++)
+    {
+        cout << i << " mod 3 = " << mod(i, 3) << endl;
+    }
     cout << "Bye Bye !!!" << endl;
 
     return 0;
@@ -63,4 +63,32 @@ int right(Tree t, uint idx)
         return answere;
     else
         return -1;
+}
+
+
+int mod(int a, int b)
+{
+   return (b + (a % b)) % b;
+}
+
+void init_tree(Tree)
+{
+    uint head, tail;
+    int wise;
+    uint i, j;
+
+    for(i = 0; i < NUM_DISKS; i++)
+    {
+        head = pow(2, i) - 1;
+        tail = pow(2, i + 1) - 1;
+
+        //alternar em horário e anti-horáro
+
+        for(j = head; j < tail; j++)
+        {
+            //inserir o par ordenado
+            cout << j << " ";
+        }
+        cout << endl;
+    }
 }

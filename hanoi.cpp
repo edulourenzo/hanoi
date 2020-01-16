@@ -22,12 +22,8 @@ int main()
     vector< stack<char> > rod(NUM_RODS, stack<char>());
     Tree tree(pow(2, NUM_DISKS) - 1);
 
-    //init_tree(tree);
+    init_tree(tree);
   
-    for(int i = -7; i <= 7; i++)
-    {
-        cout << i << " mod 3 = " << mod(i, 3) << endl;
-    }
     cout << "Bye Bye !!!" << endl;
 
     return 0;
@@ -71,23 +67,42 @@ int mod(int a, int b)
    return (b + (a % b)) % b;
 }
 
-void init_tree(Tree)
+void init_tree(Tree t)
 {
+    Node aux;
+    int idx, wise;
     uint head, tail;
-    int wise;
     uint i, j;
+    bool first;
 
+    idx = 0;
+    wise = 1;
     for(i = 0; i < NUM_DISKS; i++)
     {
         head = pow(2, i) - 1;
         tail = pow(2, i + 1) - 1;
 
-        //alternar em horário e anti-horáro
+        wise *= -1;
+        aux.first = 0;
 
+        first = true;
         for(j = head; j < tail; j++)
         {
-            //inserir o par ordenado
-            cout << j << " ";
+            if(!first)
+                aux.first = t[idx - 1].second;
+            else
+            {
+                aux.first = 0;
+                first = false;
+            }
+            
+            aux.second = mod(aux.first + wise, NUM_RODS);
+
+            t[idx] = aux;
+            
+            cout << "(" << aux.first << ", " << aux.second << ") ";
+            
+            idx++;
         }
         cout << endl;
     }

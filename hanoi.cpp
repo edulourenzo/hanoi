@@ -24,38 +24,38 @@ int main()
 
     init_tree(tree);
   
-    cout << "Bye Bye !!!" << endl;
+    cout << endl << "Bye Bye !!!" << endl;
 
     return 0;
 }
 
-int father(Tree t, uint idx)
+int father(Tree tree, uint idx)
 {
-    if(idx != 0)
+    if(idx != 0 && idx < tree.size())
         return (idx -1) / 2;
     else
         return -1;
 }
 
-int left(Tree t, uint idx)
+int left(Tree tree, uint idx)
 {
     int answere;
     
     answere = (idx * 2) + 1;
 
-    if(answere < t.size())
+    if(answere < tree.size())
         return answere;
     else
         return -1;
 }
 
-int right(Tree t, uint idx)
+int right(Tree tree, uint idx)
 {
     int answere;
     
     answere = (idx * 2) + 2;
 
-    if(answere < t.size())
+    if(answere < tree.size())
         return answere;
     else
         return -1;
@@ -67,7 +67,7 @@ int mod(int a, int b)
    return (b + (a % b)) % b;
 }
 
-void init_tree(Tree t)
+void init_tree(Tree tree)
 {
     Node aux;
     int idx, wise;
@@ -83,13 +83,11 @@ void init_tree(Tree t)
         tail = pow(2, i + 1) - 1;
 
         wise *= -1;
-        aux.first = 0;
-
         first = true;
         for(j = head; j < tail; j++)
         {
             if(!first)
-                aux.first = t[idx - 1].second;
+                aux.first = tree[idx - 1].second;
             else
             {
                 aux.first = 0;
@@ -98,12 +96,9 @@ void init_tree(Tree t)
             
             aux.second = mod(aux.first + wise, NUM_RODS);
 
-            t[idx] = aux;
-            
-            cout << "(" << aux.first << ", " << aux.second << ") ";
+            tree[idx] = aux;
             
             idx++;
         }
-        cout << endl;
     }
 }

@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 
-#define NUM_RODS 3
-#define NUM_DISKS 4
+#define NIL         -1
+#define NUM_RODS    3
+#define NUM_DISKS   4
 
 using namespace std;
 
@@ -12,10 +13,11 @@ typedef pair<rod_origin, rod_destiny> Node;
 typedef vector<Node>    Tree;
 
 int     mod         (int, int);
+void    init_tree   (Tree);
 int     father      (Tree, uint);
 int     left        (Tree, uint);
 int     right       (Tree, uint);
-void    init_tree   (Tree);
+void    inorder     (Tree);
 
 int main()
 {
@@ -23,44 +25,13 @@ int main()
     Tree tree(pow(2, NUM_DISKS) - 1);
 
     init_tree(tree);
+
+    inorder(tree);
   
     cout << endl << "Bye Bye !!!" << endl;
 
     return 0;
 }
-
-int father(Tree tree, uint idx)
-{
-    if(idx != 0 && idx < tree.size())
-        return (idx -1) / 2;
-    else
-        return -1;
-}
-
-int left(Tree tree, uint idx)
-{
-    int answere;
-    
-    answere = (idx * 2) + 1;
-
-    if(answere < tree.size())
-        return answere;
-    else
-        return -1;
-}
-
-int right(Tree tree, uint idx)
-{
-    int answere;
-    
-    answere = (idx * 2) + 2;
-
-    if(answere < tree.size())
-        return answere;
-    else
-        return -1;
-}
-
 
 int mod(int a, int b)
 {
@@ -101,4 +72,65 @@ void init_tree(Tree tree)
             idx++;
         }
     }
+}
+
+int father(Tree tree, uint idx)
+{
+    if(idx != 0 && idx < tree.size())
+        return (idx -1) / 2;
+    else
+        return NIL;
+}
+
+int left(Tree tree, uint idx)
+{
+    int answere;
+    
+    answere = (idx * 2) + 1;
+
+    if(answere < tree.size())
+        return answere;
+    else
+        return NIL;
+}
+
+int right(Tree tree, uint idx)
+{
+    int answere;
+    
+    answere = (idx * 2) + 2;
+
+    if(answere < tree.size())
+        return answere;
+    else
+        return NIL;
+}
+
+
+
+
+void inorder(Tree tree)
+{
+    stack<int> visited;
+    int current;
+
+    current = 0; //index of root
+    while(current != NIL || !visited.empty())
+    {
+        //LEFT
+        while(current != NIL)
+        {
+            visited.push(current);
+            current = left(tree, current);
+        }
+
+        //ROOT
+        current = visited.top();
+        visited.pop();
+        cout << current << endl;
+        
+        //RIGHT
+        current = right(tree, current);
+    }
+
 }

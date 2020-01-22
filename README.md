@@ -2,10 +2,11 @@
 
 1. [Introução](#1-introduÇÃo)
 2. [Abordagem](#2-abordagem)
-3. [Tipos Abstratos de Dados](#3-tipos-abstratos-de-dados-tad)
-
-4. Cáculos
-5. etc
+3. [Algoritmo](https://github.com/edulourenzo/hanoi#3-algoritmo)
+4. [Tipos Abstratos de Dados](#4-tipos-abstratos-de-dados-tad)
+5. Cáculos e Complexidades
+6. Dicionário de variáveis.
+7. Outros
 
 ---
 
@@ -25,14 +26,15 @@ Usar as hastes da torre como uma [pillha](#44-stack), e uma [árvore binária pe
 ## 3. ALGORITMO
 
 O algoritmo consiste em:
-Criar três [pillhas](#44-stack) para representar as hastes.
-Criar "N" discos, onde inicialmente são colocados em ordem crescente do topo até a base da primeira haste.
-Criar uma [árvore binária perfeita](#31-perfect-binary-tree) sendo a quantidade de níveis da árvore igual a quantidade de discos.
-Preencher os nós por nível, onde o nó inical de cada nível consiste no índice da primeira haste e o índice da haste vizinha, denominados "origem" e  "destino".
+** Criar três [pillhas](#44-stack) para representar as hastes.
+** Criar "N" discos, onde inicialmente são colocados em ordem crescente do topo até a base da primeira haste.
+** Criar uma [árvore binária perfeita](#41-perfect-binary-tree) sendo a quantidade de níveis da árvore igual a quantidade de discos.
+** Preencher os nós por nível, onde o nó inical de cada nível consiste no índice da primeira haste e o índice da haste vizinha, denominados "origem" e  "destino".
+
 E o nó seguinte de mesmo nível é prenchido com o índice de destino do nó anterior e o índice da haste vizinha.
-A vizinhança segue uma rotação modular dos índices das hastes, que alternam no sentido horário e anti-horário por nível da árvore, sendo o primeiro nível no sentido anti-horário.
-Faz uma varredura [em ordem](https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)) dos nós da arvore e movendo os discos da haste de origem para a haste de destino conforme armazenado no preenchimento dos nós.
-Após a vareedura todos os discos estarão em ordem crescente do topo até a base da na ultima haste.
+** A vizinhança segue uma rotação modular dos índices das hastes, que alternam no sentido horário e anti-horário por nível da árvore, sendo o primeiro nível no sentido anti-horário.
+** Faz uma varredura [em ordem](https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)) dos nós da arvore e movendo os discos da haste de origem para a haste de destino conforme armazenado no preenchimento dos nós.
+** Após a vareedura todos os discos estarão em ordem crescente do topo até a base da na ultima haste.
 
 ---
 

@@ -29,9 +29,8 @@ O algoritmo consiste em:
 * Criar três [pillhas](#44-stack) para representar as hastes.
 * Criar "N" discos, onde inicialmente são colocados em ordem crescente do topo até a base da primeira haste.
 * Criar uma [árvore binária perfeita](#41-perfect-binary-tree) sendo a quantidade de níveis da árvore igual a quantidade de discos.
-* Preencher os nós por nível, onde o nó inical de cada nível consiste no índice da primeira haste e o índice da haste vizinha, denominados "origem" e  "destino".
-
-E o nó seguinte de mesmo nível é prenchido com o índice de destino do nó anterior e o índice da haste vizinha.
+* Preencher os nós por nível, onde o nó inical de cada nível consiste no índice da primeira haste e o índice da haste vizinha, denominados "origem" e  "destino".  
+  E o nó seguinte de mesmo nível é prenchido com o índice de destino do nó anterior e o índice da haste vizinha.
 * A vizinhança segue uma rotação modular dos índices das hastes, que alternam no sentido horário e anti-horário por nível da árvore, sendo o primeiro nível no sentido anti-horário.
 * Faz uma varredura [em ordem](https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)) dos nós da arvore e movendo os discos da haste de origem para a haste de destino conforme armazenado no preenchimento dos nós.
 * Após a vareedura todos os discos estarão em ordem crescente do topo até a base da na ultima haste.

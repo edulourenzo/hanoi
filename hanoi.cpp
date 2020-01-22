@@ -34,9 +34,9 @@ int main()
 
     init_tree(tree);
 
-    for (it = 0; it < NUM_DISKS; it++)
+    for (it = 1; it <= NUM_DISKS; it++)
     {
-        pegs[0].push('A' + NUM_DISKS - it - 1);
+        pegs[0].push('A' + NUM_DISKS - it);
     }
 
     inorder(tree, pegs);

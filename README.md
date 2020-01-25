@@ -4,9 +4,6 @@
 2. [Abordagem](#2-abordagem)
 3. [Algoritmo](https://github.com/edulourenzo/hanoi#3-algoritmo)
 4. [Tipos Abstratos de Dados](#4-tipos-abstratos-de-dados-tad)
-5. Cáculos e Complexidades
-6. Dicionário de variáveis.
-7. Outros
 
 ---
 
